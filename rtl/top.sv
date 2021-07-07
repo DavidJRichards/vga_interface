@@ -9,6 +9,8 @@ module top (
     output logic[5:0] VGA_B,
     output logic VGA_HSYNC,
     output logic VGA_VSYNC,
+    output logic vga_clk,
+    output logic vga_blank,
     input PS2_CLOCK,
     input PS2_DATA
   );
@@ -21,8 +23,7 @@ module top (
   // blink leds with 1Hz
   assign LED_GREEN = state;
   assign LED_RED = state;
-
-
+  
   reg [15:0] write_addr, read_addr;
   reg [17:0] write_data;
   wire [17:0] read_data;
@@ -41,8 +42,13 @@ module top (
   logic vga_hsync_;
   logic vga_vsync_;
   logic [11:0] VGA_SCREEN_WIDTH, VGA_SCREEN_HEIGHT;
+  //logic vga_clk;
+  //logic vga_blank;
 
   wire px_clk;
+
+  assign vga_clk = px_clk;
+  assign vga_blank = 1;
 
   always @(posedge px_clk)
   begin

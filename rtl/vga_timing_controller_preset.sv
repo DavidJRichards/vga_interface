@@ -18,7 +18,7 @@
 
 module vga_timing_controller_preset
   #(
-     parameter int VIDEO_ID_CODE = 1
+     parameter int VIDEO_ID_CODE = 4
    )
    (
      input wire clk_pixel,

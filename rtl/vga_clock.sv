@@ -2,7 +2,7 @@
 
 module vga_clock
   #(
-     parameter int VIDEO_ID_CODE = 1
+     parameter int VIDEO_ID_CODE = 4
    )
    (
      input logic clk_33,
