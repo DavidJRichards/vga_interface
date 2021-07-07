@@ -14,7 +14,7 @@ The project uses the 33.333 Mhz PS clock of the ebaz board which has to be manua
 
 ![GitHub Logo](./images/clock.jpg)
 
-To physical VGA connection requires a resistor network DAC. The 18bit interface is implemented in the following way.
+The physical VGA connection requires a resistor network DAC. The 18bit interface is implemented in the following way.
 
 ![GitHub Logo](./images/schematic.png)
 ![GitHub Logo](./images/connector.jpg)
@@ -47,6 +47,6 @@ MiniFB: https://github.com/emoon/minifb \
 The PS/2 keyboard controller is based on https://forum.digikey.com/t/ps-2-keyboard-to-ascii-converter-vhdl/12616 and was portet to SystemVerilog. \
 The VGA resistor network DAC is based on http://retroramblings.net/?p=190. \
 The font file and inspiration is taken from https://github.com/dmitrybarsukov/fpga-text-to-vga. \
-https://github.com/gipi/electronics-notes/tree/master/fpga/mojo/VGAGlyph was a very useful recource helping me to implement the simulator. \
+https://github.com/gipi/electronics-notes/tree/master/fpga/mojo/VGAGlyph was a very useful recource helping me to implement the simulator. 
 
 
